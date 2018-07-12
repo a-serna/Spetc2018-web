@@ -54,25 +54,25 @@
         <nav class="col-12 mt-5">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link anim_swing" href="#evento"><h5>Evento</h5></a>
+              <a data-scroll class="nav-link anim_swing" href="#evento"><h5>Evento</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#comite"><h5>Comité</h5></a>
+              <a data-scroll class="nav-link" href="#comite"><h5>Comité</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Mdn"><h5>Conoce Medellín</h5></a>
+              <a data-scroll class="nav-link" href="#Mdn"><h5>Conoce Medellín</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#agenda"><h5>Agenda académica</h5></a>
+              <a data-scroll class="nav-link" href="#agenda"><h5>Agenda académica</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cursos"><h5>Cursos</h5></a>
+              <a data-scroll class="nav-link" href="#cursos"><h5>Cursos</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#networking"><h5>Networking</h5></a>
+              <a data-scroll class="nav-link" href="#networking"><h5>Networking</h5></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto"><h5>Contáctanos</h5></a>
+              <a data-scroll class="nav-link" href="#contacto"><h5>Contáctanos</h5></a>
             </li>
           </ul>
         </nav>
@@ -160,8 +160,28 @@
   </script>
   <script src="js/time.js"></script>
   <script src="js/particulas.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+  // Selectors
+  ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+  header: null, // Selector for fixed headers (must be a valid CSS selector)
+  topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
+  // Speed & Easing
+  speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+  clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+  easing: 'easeInOutCubic', // Easing pattern to use
+  customEasing: function (time) {
+    // Function. Custom easing pattern
+    // If this is set to anything other than null, will override the easing option above
+    // return <your formulate with time as a multiplier>
+    // Example: easeInOut Quad
+    return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+  },
+  });
+  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   </body>

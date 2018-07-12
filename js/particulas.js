@@ -1,8 +1,8 @@
 $(function(){
   $(".particle").jParticle({
-    // background: 'rgba(0,0,0, 0)',
-    color: '#A2A2A2'
-    // particlesNumber: 100
+    background: 'rgba(0,0,0, 0)',
+    color: '#A2A2A2',
+    particlesNumber: 100,
   });
 });
 
