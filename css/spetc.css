@@ -1,21 +1,124 @@
 body{
   font-size: 16px;
 }
-.particle {width: 100vw; height: 90vh;}
+.particle {width: 100vw; height: 80vh; z-index: 0;}
+.bg-home{
+  z-index: 1;
+  height: 80vh;
+  background-color: rgba(0,0,0,0.61);
+}
+.bg-image{
+  width: 100vw;
+  z-index: -2;
+  min-height: 80vh;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  background: #000000 url(../images/bg.jpg) no-repeat center center;
+  background-size: cover;
+  left: 0px;
+}
+.bg-comite {
+  z-index: -2;
+  min-height: 380px;
+  height: 440px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  background: transparent url(../images/2013-04-12_midland_oil_enterprise_zachary_strain01718.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-filter{
+  z-index: 1;
+  min-height: 380px;
+  background-color: rgba(0,0,0,0.61);
+}
+.bg-mdn{
+  z-index: 9;
+  min-height: 750px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  background: transparent url(../images/franja1.png) no-repeat left top;
+  background-size: cover;
+}
 .roundedbox{
-  /* z-index: 12; */
   width: 60%;
+  height: 90px;
   background-color: #FFFFFF;
-  border-radius: 38px;
+  border-radius: 2em;
+  padding-top: 0.5em;
 }
 .roundedbox-02{
-  /* z-index: 19; */
-    width: 80px;
-    min-height: 26px;
-    background-color: #F7931E;
-    border-radius: 11px;
-    color: #FFFFFF;
-    line-height: 24px;
-    text-align: center;
-    font-size: 20px;
+  width: 100%;
+  min-height: 1.5em;
+  background-color: #F7931E;
+  border-radius: 1em;
+  color: #FFFFFF;
+  line-height: 1.6em;
+}
+.nav-item{
+  margin-left: 1em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  border-radius: 10px;
+}
+.nav-link{
+  color: white;
+}
+.nav-item:hover{
+  background-color: #FFFFFF;
+}
+.nav-link:hover{
+  color: black;
+}
+.divider{
+  width: 100vw;
+  height: 8px;
+  background-color: #F7931E;
+}
+.text-orange{
+  color: #F7931E;
+}
+.text-gris{
+  color: #484848;
+}
+h1{
+  font-size: 4em !important;
+}
+h2{
+  font-size: 2.8em !important;
+}
+.btn-outline-warning {
+  color: #F7931E !important;
+  border-color: #F7931E !important;
+}
+.btn-outline-warning:hover {
+  color: White !important;
+  background-color: #F7931E !important;
+}
+.box-container{
+  z-index: 0;
+  width:403px;
+  height:422px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#7F7F7F;
+  background-color:#FFFFFF;
+  border-radius:211px 0px 211px 0px ;
+  -webkit-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
+  -ms-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
+  transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
+}
+.box-comite{
+  z-index: 1;
+  width: 283px;
+  background-color: #F7931E;
+  padding-bottom: 1px;
+  position: relative;
+  margin-right: -10000px;
+  margin-top: 101px;
+  left: 37px;
 }
