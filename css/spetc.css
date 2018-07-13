@@ -189,6 +189,7 @@ P{
   background-color: transparent;
   border-width: 0px 0px 0px 3px;
   margin-bottom: 1em;
+  line-height: 0.5em !important;
 }
 .team:hover{
   background-color: #EAEAEA;
@@ -209,4 +210,13 @@ P{
 }
 a{
   text-decoration: none !important;
+}
+.form-control{
+  background-color: #EAEAEA !important;
+}
+textarea{
+  text-align: center;
+}
+.social:hover{
+  background-color: black;
 }
