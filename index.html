@@ -107,7 +107,7 @@
     </section>
 <!-- COMITE -->
     <section id="comite" class="bg-comite" style="background-attachment: fixed;">
-      <div class="bg-filter">
+      <div class="bg-filter pb-5">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
@@ -176,13 +176,22 @@
       <div class="col-12">
         <img class="svg img-fluid mx-auto d-block" src="images/horario.svg" alt="Horario" width="80%" height="auto"/>
       </div>
-      <div class="col-12">
+      <div class="col-12 p-5">
         <h1 class="text-orange text-center">LOS PONENTES DEL EVENTO</h1>
       </div>
-      <div class="col-12">
-        franja
+    </div>
+
+<div class="row bg-light">
+  <div class="col-12">
+    <div class="franja d-flex bd-highlight p-3">
+      <div class="box-rounded mr-auto bd-highlight">
+      </div>
+      <div class="box-rounded bd-highlight">
       </div>
     </div>
+  </div>
+</div>
+
 <!-- CARRUSEL -->
     <div class="bg-light">
       <div class="carrusel">
@@ -236,13 +245,19 @@
         </div>
       </div>
     </div>
+
+    <div class="row bg-light pb-5">
+      <div class="col-12">
+        <div class="franja">
+        </div>
+      </div>
+    </div>
 <!-- Titulo curso -->
     <section id="cursos" class="pt-3 pb-3 bg-orange">
       <div class="container">
         <div class="row">
           <div class="col-6">
             <h1 class="text-white">CURSOS TÉCNICOS</h1>
-            <h3 class="text-white">TEXT</h3>
           </div>
         </div>
       </div>
@@ -252,46 +267,52 @@
 
     <div class="bg-light pt-3 pb-3">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="card-deck">
+          <!-- <div class="col"> -->
             <div class="card">
-              <img class="card-img-top" src="images/bgblack.jpg">
+              <img class="card-img-top" src="images/Yacimientos.jpg">
               <div class="card-header">
-                <h5 class="text-white">GEOLOGIA NO CONVENCIONALES</h5>
+                <h5 class="text-white text-uppercase">Yacimientos No convencionales</h5>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Álvaro Montoya</h5>
-                <p class="card-text">Descripción.</p>
-                <a target="_blank" href="#"><button type="button" class="btn btn-outline-warning btn-lg">Inscribirme</button></a>
+                <p class="card-text">Curso interdisciplinario, que agrupa los campos de la geología, ingeniería de petróleos, mecánica de rocas. Con el fin de conocer una amplia gama de interpretaciones que dan lugar especialmente durante la perforación y completamiento de los pozos.</p>
+                <p class="card-text"><small class="text-muted">Por: Álvaro Montoya - OGSI de Argentina</small></p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
-          </div>
-          <div class="col">
+          <!-- </div> -->
+          <!-- <div class="col"> -->
             <div class="card">
-              <img class="card-img-top" src="images/bgblack.jpg">
+              <img class="card-img-top" src="images/energias.jpg">
               <div class="card-header">
-                <h5 class="text-white">TRANSICIÓN ENERGÉTICA Y USO DEL AGUA</h5>
+                <h5 class="text-white text-uppercase">Transición Energética</h5>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Sergio Lopera</h5>
-                <p class="card-text">Descripción.</p>
-                <a target="_blank" href="#"><button type="button" class="btn btn-outline-warning btn-lg">Inscribirme</button></a>
+                <p class="card-text">Entender la relevancia de las rutas alternativas energéticas, como una solución a las fallas de eficiencia y sostenibilidad en el modelo actual de energía, de forma integral que involucre la sociedad, el medio ambiente y la economía.</p>
+                <p class="card-text"><small class="text-muted">Por: Sergio Lopera, Sebastian carvajal y Carlos Ceballos - Universidad Nacional sede Medellín</small></p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
-          </div>
-          <div class="col">
+          <!-- </div> -->
+          <!-- <div class="col"> -->
             <div class="card">
-              <img class="card-img-top" src="images/bgblack.jpg">
+              <img class="card-img-top" src="images/pozo.jpg">
               <div class="card-header">
-                <h5 class="text-white">CEMENTACIÓN OFFSHORE</h5>
+                <h5 class="text-white text-uppercase">General Cementing Practices for Optimal Production</h5>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Juan Manuel Arroyabe</h5>
                 <p class="card-text">Descripción.</p>
-                <a target="_blank" href="#"><button type="button" class="btn btn-outline-warning btn-lg">Inscribirme</button></a>
+                <p class="card-text"><small class="text-muted">Por: Juan Manuel Arroyave - Halliburton</small></p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -301,7 +322,7 @@
         <div class="row pt-3 pb-3">
           <div class="col-6">
             <h1 class="text-white">NETWORKING SESSION</h1>
-            <a target="_blank" href="#"><button type="button" class="btn btn-lg btn-outline-light">¡Quiero registrarme!</button></a>
+            <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">¡Quiero Pre-inscribirme!</button>
           </div>
           <div class="col-6">
             <p class="text-white">La sesión de networking será un espacio creado para el contacto industria-academia, es una cena donde los profesionales podrán compartir experiencias y conocimientos en áreas de la industria con los estudiantes y demás asistentes al evento.
@@ -311,6 +332,33 @@
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Pasos para la Pre-inscripción</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Debes dar click en continuar con el registro.</li>
+              <li>Regístrate y obtén tu ticket de preinscripción.</li>
+              <li>Realizar la consignación del valor total del Networking.</li>
+              <li>Envía el comprobante junto con el ticket de la pre-inscripción al correo:
+                <b>capitulospe_med@unal.edu.co</b>
+              </li>
+            </ul>
+            <p><small>Recuerda completar todos los pasos para que no pierdas tu cupo en el evento.</small></p>
+          </div>
+          <div class="modal-footer">
+            <a target="_blank" href="https://networkingsessionsspetc2018.eventbrite.com"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Continuar</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 <!-- Titulo contacto -->
     <section id="contacto" class="bg-contacto" style="background-attachment: fixed;">
       <div class="bg-filter">

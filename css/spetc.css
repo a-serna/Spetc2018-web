@@ -193,3 +193,20 @@ P{
 .team:hover{
   background-color: #EAEAEA;
 }
+.franja{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 50px;
+  background-color: #F7931E;
+  padding-bottom: 11px;
+}
+.box-rounded{
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border-radius: 50%;
+}
+a{
+  text-decoration: none !important;
+}
