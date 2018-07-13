@@ -18,7 +18,16 @@ body{
   filter: alpha(opacity=100);
   background: #000000 url(../images/bg.jpg) no-repeat center center;
   background-size: cover;
-  left: 0px;
+  position: fixed;
+}
+#evento{
+  background-color: white;
+}
+#agenda{
+  z-index: 1;
+}
+.bg-orange{
+  background-color: #F7931E;
 }
 .bg-comite {
   z-index: -2;
@@ -32,6 +41,7 @@ body{
 }
 .bg-filter{
   z-index: 1;
+  height: 440px;
   min-height: 380px;
   background-color: rgba(0,0,0,0.61);
 }
@@ -81,8 +91,16 @@ body{
   height: 8px;
   background-color: #F7931E;
 }
+.divider02{
+  width: 100vw;
+  height: 8px;
+  background-color: #EAEAEA;
+}
 .text-orange{
   color: #F7931E;
+}
+.text-orange-light{
+  color: #FFB21D;
 }
 .text-gris{
   color: #484848;
@@ -92,6 +110,9 @@ h1{
 }
 h2{
   font-size: 2.8em !important;
+}
+h3{
+  font-size: 2em !important;
 }
 P{
   font-size: 1.2em !important;
@@ -119,11 +140,12 @@ P{
 }
 .box-comite{
   z-index: 1;
-  width: 283px;
+  width: 70%;
   background-color: #F7931E;
-  padding-bottom: 1px;
-  position: relative;
-  margin-right: -10000px;
-  margin-top: 101px;
-  left: 37px;
+}
+.box-logos{
+  z-index: 1;
+}
+.box-text{
+  z-index: 0;
 }
