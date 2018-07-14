@@ -249,7 +249,7 @@ textarea{
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .card{
-    display: contents !important;
+    display: contents;
   }
   .carrusel {
     width: 70%;
@@ -261,7 +261,11 @@ textarea{
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+  .card{
+    display: flex;
+  }
+ }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
