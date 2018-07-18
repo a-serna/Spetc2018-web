@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/inicio-favicon.ico?crc=54738396"/>
     <link rel="stylesheet" type="text/css" href="css/spetc.css"/>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <!-- analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,6 +49,9 @@
               <a data-scroll class="nav-link" href="#networking"><h5>Networking</h5></a>
             </li>
             <li class="nav-item">
+              <a data-scroll class="nav-link" href="#partner"><h5>Vincúlate</h5></a>
+            </li>
+            <li class="nav-item">
               <a data-scroll class="nav-link" href="#contacto"><h5>Contáctanos</h5></a>
             </li>
           </ul>
@@ -57,26 +60,26 @@
 <!-- fin del menu  responsive-->
       <div class="particle position-absolute"></div>
       <div class="bg-image" style="background-attachment: fixed;"></div>
-      <div class="row bg-home">
-        <div class="col-12 pt-5 mt-5">
-          <img src="images/logowhite.png" class="img-fluid mx-auto d-block" alt="Responsive image">
+      <div class="row bg-home m-0">
+        <div class="col-12">
+          <img src="images/logowhite.png" class="img-fluid mx-auto d-block p-4" alt="Responsive image">
         </div>
-        <div class="col-12 d-none d-md-block">
+        <div class="col-12">
           <div class="container">
             <div class="row roundedbox mx-auto">
-              <div class="col-sm-3">
+              <div class="col-6 col-md-3">
                 <h2 id="dias" class="text-center"></h2>
                 <h4 class="roundedbox-02 text-center">Días</h4>
               </div>
-              <div class="col-sm-3">
+              <div class="col-6 col-md-3">
                 <h2 id="horas" class="text-center"></h2>
                 <h4 class="roundedbox-02 text-center">Horas</h4>
               </div>
-              <div class="col-sm-3">
+              <div class="col-6 col-md-3">
                 <h2 id="minutos" class="text-center"></h2>
                 <h4 class="roundedbox-02 text-center">Minutos</h4>
               </div>
-              <div class="col-sm-3">
+              <div class="col-6 col-md-3">
                 <h2 id="segundos" class="text-center"></h2>
                 <h4 class="roundedbox-02 text-center">Segundos</h4>
               </div>
@@ -102,6 +105,9 @@
             </li>
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#networking"><h5>Networking</h5></a>
+            </li>
+            <li class="nav-item">
+              <a data-scroll class="nav-link" href="#partner"><h5>Vincúlate</h5></a>
             </li>
             <li class="nav-item">
               <a data-scroll class="nav-link" href="#contacto"><h5>Contáctanos</h5></a>
@@ -138,11 +144,19 @@
       </div>
     </section>
 <!-- COMITE -->
+    <div class="row d-block d-lg-none">
+      <div class="col-12 bg-light">
+          <h2 class="text-orange text-uppercase text-center p-2">CON EL RESPALDO DE:</h2>
+          <img class="img-fluid mx-auto d-block p-3" src="images/logounalmed.png" alt="unal"/>
+          <img class="img-fluid mx-auto d-block p-3" src="images/logospecolombianchapters.png" alt="spetc"/>
+          <img class="img-fluid mx-auto d-block p-3" src="images/logospecol.png" alt="spetc"/>
+      </div>
+    </div>
     <section id="comite" class="bg-comite" style="background-attachment: fixed;">
       <div class="bg-filter pb-5">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 d-none d-lg-block"> <!-- CORREGIR -->
+            <div class="col-lg-6 col-md-12 d-none d-lg-block">
               <div class="box-comite position-absolute mt-5">
                 <h2 class="text-white text-uppercase text-center p-2">CON EL RESPALDO DE:</h2>
               </div>
@@ -160,7 +174,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12">
               <h1 class="text-white text-uppercase text-right pt-5">El comité organizador</h1>
               <p class="text-white">SPE Student Chapter, Universidad Nacional de Colombia, es un capítulo estudiantil vinculado a la Society of Petroleum Engineers, es una entidad sin ánimo de lucro, cuyo principal objetivo es vincular la academia con la industria, cooperando a formar estudiantes de ingeniería de petróleos en aspectos académicos, éticos y sociales. El capítulo está conformado por estudiantes del programa, de distintos semestres, y para este evento se encuentra subdividido en: Coordinador general, comité social, de publicidad, financiero, técnico, de logística, ventas.
               <br></br>
@@ -191,7 +205,7 @@
     <section id="agenda" class="pt-3 pb-3 bg-orange">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <h1 class="text-white">AGENDA ACADÉMICA</h1>
             <h3 class="text-white">VIVE UNA EXPERIENCIA TÉCNICA EN LA SPE TECHNICAL CONFERENCE 2018</h3>
           </div>
@@ -206,14 +220,14 @@
         <h1 class="text-orange text-center">PROGRAMACIÓN DEL EVENTO</h1>
       </div>
       <div class="col-12">
-        <img class="svg img-fluid mx-auto d-block" src="images/horario.svg" alt="Horario" width="80%" height="auto"/>
+        <img id="horario" class="img-fluid mx-auto d-block" src="images/horario.svg" alt="Horario"/>
       </div>
       <div class="col-12 p-5">
         <h1 class="text-orange text-center">LOS PONENTES DEL EVENTO</h1>
       </div>
     </div>
 
-<div class="row bg-light">
+<!-- <div class="row bg-light">
   <div class="col-12">
     <div class="franja d-flex bd-highlight p-3">
       <div class="box-rounded mr-auto bd-highlight">
@@ -222,7 +236,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- CARRUSEL -->
     <div class="bg-light">
@@ -278,12 +292,12 @@
       </div>
     </div>
 
-    <div class="row bg-light pb-5">
+    <!-- <div class="row bg-light pb-5">
       <div class="col-12">
         <div class="franja">
         </div>
       </div>
-    </div>
+    </div> -->
 <!-- Titulo curso -->
     <section id="cursos" class="pt-3 pb-3 bg-orange">
       <div class="container">
@@ -311,7 +325,7 @@
                 <p class="card-text"><small class="text-muted">Por: Álvaro Montoya - OGSI de Argentina</small></p>
               </div>
               <div class="card-footer">
-                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
+                <a target="_blank" href="https://curso-yacimientos.eventbrite.com"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
           <!-- </div> -->
@@ -326,7 +340,7 @@
                 <p class="card-text"><small class="text-muted">Por: Sergio Lopera, Sebastian carvajal y Carlos Ceballos - Universidad Nacional sede Medellín</small></p>
               </div>
               <div class="card-footer">
-                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
+                <a target="_blank" href="https://curso-transicion-energetica.eventbrite.com"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
           <!-- </div> -->
@@ -341,7 +355,7 @@
                 <p class="card-text"><small class="text-muted">Por: Juan Manuel Arroyave - Halliburton</small></p>
               </div>
               <div class="card-footer">
-                <a target="_blank" href="#"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
+                <a target="_blank" href="https://curso-cementing.eventbrite.com"><button type="button" class="btn btn-block btn-outline-warning btn-lg">Inscribirme</button></a>
               </div>
             </div>
           <!-- </div> -->
@@ -352,14 +366,14 @@
     <section id="networking" class="bg-gris">
       <div class="container">
         <div class="row pt-3 pb-3">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-sm-12">
             <h1 class="text-white">NETWORKING SESSION</h1>
-            <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">¡Quiero Pre-inscribirme!</button>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-sm-12">
             <p class="text-white">La sesión de networking será un espacio creado para el contacto industria-academia, es una cena donde los profesionales podrán compartir experiencias y conocimientos en áreas de la industria con los estudiantes y demás asistentes al evento.
               <br></br>
               En este entorno se podrá compartir con los ingenieros y asi lograr un contacto más cercano y enriquecedor.</p>
+            <button type="button" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">¡Quiero Pre-inscribirme!</button>
           </div>
         </div>
       </div>
@@ -391,6 +405,25 @@
         </div>
       </div>
     </div>
+<!-- vincúlate seccion -->
+    <section id="partner" class="bg-orange">
+      <div class="container">
+        <div class="row pt-3 pb-3">
+          <div class="col-sm-12">
+            <h1 class="text-white">VINCÚLATE AL EVENTO</h1>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="text-white">Haz parte de SPETC 2018 como patrocinador, donante ó aliado.
+              <br>
+              Para más información escribenos a: capitulospe_med@unal.edu.co</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="text-white">Aquí puedes consultar los productos disponibles.</p>
+            <a  target="_blank" href="Productos.pdf"><button type="button" class="btn btn-lg btn-outline-light">Descargar catálogo</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
 <!-- Titulo contacto -->
     <section id="contacto" class="bg-contacto" style="background-attachment: fixed;">
       <div class="bg-filter">
@@ -553,9 +586,8 @@
   },
   });
   </script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
 </html>
