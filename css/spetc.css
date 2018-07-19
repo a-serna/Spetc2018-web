@@ -1,495 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
-body{
-  font-size: 18px;
-  font-family: 'Pathway Gothic One', sans-serif !important;
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');body{font-size:18px;font-family:'Pathway Gothic One', sans-serif !important;}
+.particle{width:100vw;height:100vh;z-index:0;}
+.bg-home{z-index:1;height:100vh;background-color:rgba(0,0,0,0.61);}
+#evento{background-color:white;}
+#agenda{z-index:1;}
+.bg-orange{background-color:#F7931E;}
+.bg-gris{background-color:#606062;}
+.bg-filter{z-index:1;height:auto;background-color:rgba(0,0,0,0.61);}
+.roundedbox-02{width:100%;min-height:1.5em;background-color:#F7931E;border-radius:1em;color:#FFFFFF;line-height:1.6em;}
+.nav-item{margin-left:1em;border-style:solid;border-width:2px;border-color:#FFFFFF;background-color:transparent;border-radius:10px;}
+.nav-link{color:white;}
+.nav-item:hover{background-color:#FFFFFF;}
+.nav-link:hover{color:black;}
+.navbar-nav .nav-item{margin:0px;background-color:none;border-style:none;border-radius:0px;text-align:center;}
+.navbar-nav .nav-item .nav-link{color:black;}
+.navbar-nav .nav-item:hover{background-color:#EAEAEA;}
+.divider{width:100vw;height:8px;background-color:#F7931E;}
+.divider02{width:100vw;height:8px;background-color:#EAEAEA;}
+.text-orange{color:#F7931E;}
+.text-orange-light{color:#FFB21D;}
+.text-gris{color:#484848;}
+h1{font-size:4em !important;}
+h2{font-size:2.8em !important;}
+h3{font-size:2em !important;}
+P{font-size:1.2em !important;}
+.btn-outline-warning{color:#F7931E !important;border-color:#F7931E !important;}
+.btn-outline-warning:hover{color:White !important;background-color:#F7931E !important;}
+.box-container{z-index:0;width:403px;height:422px;border-style:solid;border-width:5px;border-color:#7F7F7F;background-color:#FFFFFF;border-radius:211px 0px 211px 0px;-webkit-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);-ms-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);}
+.box-comite{z-index:1;width:70%;background-color:#F7931E;}
+.box-logos{z-index:1;}
+.box-text{z-index:0;}
+.card-header{background-color:#F7931E !important;}
+.team{border-style:solid;border-color:#F7931E;background-color:transparent;border-width:0px 0px 0px 3px;margin-bottom:1em;line-height:0.5em !important;}
+.team:hover{background-color:#EAEAEA;}
+.franja{width:60%;margin-left:20%;margin-right:20%;height:50px;background-color:#F7931E;padding-bottom:11px;}
+.box-rounded{height:23px;width:23px;background-color:white;border-radius:50%;}
+a{text-decoration:none !important;}
+.form-control{background-color:#EAEAEA !important;}
+textarea{text-align:center;}
+.social:hover{background-color:black;}
+@media (max-width:576px){.bg-image{width:100vw;z-index:-2;height:100vh;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:#000000 url(../images/bg-xs.jpg) no-repeat center center;background-size:cover;position:fixed;}
+.roundedbox{width:95%;height:auto;padding-top:0;}
+.bg-mdn{background-color:white;}
+.bg-comite{z-index:-2;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/petrol-xs.jpg) no-repeat center center;background-size:cover;}
+#horario{width:100%;height:auto;}
+.carrusel{width:100%;margin-left:0%;margin-right:0%;padding-left:0px;padding-right:0px;}
+.bg-contacto{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bg-xs.jpg) no-repeat center center;background-size:cover;}
+.bg-footer{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bgblack-xs.jpg) no-repeat center center;background-size:cover;}
 }
-.particle {width: 100vw; height: 100vh; z-index: 0;}
-.bg-home{
-  z-index: 1;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.61);
+@media (min-width:576px){.bg-image{width:100vw;z-index:-2;height:100vh;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:#000000 url(../images/bg-sm.jpg) no-repeat center center;background-size:cover;position:fixed;}
+.roundedbox{width:95%;height:auto;padding-top:0;}
+.bg-mdn{background-color:white;}
+.bg-comite{z-index:-2;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/petrol-sm.jpg) no-repeat center center;background-size:cover;}
+#horario{width:100%;height:auto;}
+.carrusel{width:100%;margin-left:0%;margin-right:0%;padding-left:0px;padding-right:0px;}
+.card-deck{display:flex !important;flex-direction:column !important;}
+.bg-contacto{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bg-sm.jpg) no-repeat center center;background-size:cover;}
+.bg-footer{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bgblack-sm.jpg) no-repeat center center;background-size:cover;}
 }
-#evento{
-  background-color: white;
+@media (min-width:768px){.bg-image{width:100vw;z-index:-2;height:100vh;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:#000000 url(../images/bg-md.jpg) no-repeat center center;background-size:cover;position:fixed;}
+.roundedbox{width:70%;height:90px;padding-top:0.5em;}
+.bg-mdn{background-color:white;}
+.bg-comite{z-index:-2;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/petrol.jpg) no-repeat center center;background-size:cover;}
+#horario{width:90%;height:auto;}
+.carrusel{width:90%;margin-left:5%;margin-right:5%;padding-left:0px;padding-right:0px;}
+.bg-contacto{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bg-md.jpg) no-repeat center center;background-size:cover;}
+.bg-footer{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bgblack-md.jpg) no-repeat center center;background-size:cover;}
 }
-#agenda{
-  z-index: 1;
+@media (min-width:992px){.bg-image{width:100vw;z-index:-2;height:100vh;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:#000000 url(../images/bg.jpg) no-repeat center center;background-size:cover;position:fixed;}
+.roundedbox{width:60%;height:90px;background-color:#FFFFFF;border-radius:2em;padding-top:0.5em;}
+.bg-mdn{z-index:9;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/franja1-md.jpg) no-repeat right top;background-size:cover;}
+.bg-comite{z-index:-2;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/petrol.jpg) no-repeat center center;background-size:cover;}
+#horario{width:80%;height:auto;}
+.carrusel{width:80%;margin-left:10%;margin-right:10%;padding-left:0px;padding-right:0px;}
+.card-deck{display:flex !important;flex-direction:row !important;}
+.bg-contacto{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bg.jpg) no-repeat center center;background-size:cover;}
+.bg-footer{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bgblack.jpg) no-repeat center center;background-size:cover;}
 }
-.bg-orange{
-  background-color: #F7931E;
-}
-.bg-gris{
-  background-color: #606062;
-}
-.bg-filter{
-  z-index: 1;
-  height: auto;
-  background-color: rgba(0,0,0,0.61);
-}
-.roundedbox{
-  width: 60%;
-  height: 90px;
-  background-color: #FFFFFF;
-  border-radius: 2em;
-  padding-top: 0.5em;
-}
-.roundedbox-02{
-  width: 100%;
-  min-height: 1.5em;
-  background-color: #F7931E;
-  border-radius: 1em;
-  color: #FFFFFF;
-  line-height: 1.6em;
-}
-.nav-item{
-  margin-left: 1em;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #FFFFFF;
-  background-color: transparent;
-  border-radius: 10px;
-}
-.nav-link{
-  color: white;
-}
-.nav-item:hover{
-  background-color: #FFFFFF;
-}
-.nav-link:hover{
-  color: black;
-}
-.navbar-nav .nav-item{
-  margin: 0px;
-  background-color: none;
-  border-style: none;
-  border-radius: 0px;
-  text-align: center;
-}
-.navbar-nav .nav-item .nav-link{
-  color: black;
-}
-.navbar-nav .nav-item:hover{
-  background-color: #EAEAEA;
-}
-.divider{
-  width: 100vw;
-  height: 8px;
-  background-color: #F7931E;
-}
-.divider02{
-  width: 100vw;
-  height: 8px;
-  background-color: #EAEAEA;
-}
-.text-orange{
-  color: #F7931E;
-}
-.text-orange-light{
-  color: #FFB21D;
-}
-.text-gris{
-  color: #484848;
-}
-h1{
-  font-size: 4em !important;
-}
-h2{
-  font-size: 2.8em !important;
-}
-h3{
-  font-size: 2em !important;
-}
-P{
-  font-size: 1.2em !important;
-}
-.btn-outline-warning {
-  color: #F7931E !important;
-  border-color: #F7931E !important;
-}
-.btn-outline-warning:hover {
-  color: White !important;
-  background-color: #F7931E !important;
-}
-.box-container{
-  z-index: 0;
-  width:403px;
-  height:422px;
-  border-style:solid;
-  border-width:5px;
-  border-color:#7F7F7F;
-  background-color:#FFFFFF;
-  border-radius:211px 0px 211px 0px ;
-  -webkit-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
-  -ms-transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
-  transform:matrix(0.9659,0.2588,-0.2588,0.9659,100,0);
-}
-.box-comite{
-  z-index: 1;
-  width: 70%;
-  background-color: #F7931E;
-}
-.box-logos{
-  z-index: 1;
-}
-.box-text{
-  z-index: 0;
-}
-.card-header{
-  background-color: #F7931E !important;
-}
-.team{
-  border-style: solid;
-  border-color: #F7931E;
-  background-color: transparent;
-  border-width: 0px 0px 0px 3px;
-  margin-bottom: 1em;
-  line-height: 0.5em !important;
-}
-.team:hover{
-  background-color: #EAEAEA;
-}
-.franja{
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 50px;
-  background-color: #F7931E;
-  padding-bottom: 11px;
-}
-.box-rounded{
-  height: 23px;
-  width: 23px;
-  background-color: white;
-  border-radius: 50%;
-}
-a{
-  text-decoration: none !important;
-}
-.form-control{
-  background-color: #EAEAEA !important;
-}
-textarea{
-  text-align: center;
-}
-.social:hover{
-  background-color: black;
-}
-.carrusel{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-
-/* // Extra small devices (portrait phones, less than 576px) */
-/* // No media query for `xs` since this is the default in Bootstrap */
-@media (max-width: 576px) {
-  .bg-image{
-    width: 100vw;
-    z-index: -2;
-    height: 100vh;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: #000000 url(../images/bg-xs.jpg) no-repeat center center;
-    background-size: cover;
-    position: fixed;
-  }
-  .roundedbox{
-    width: 95%;
-    height: auto;
-    padding-top: 0;
-  }
-  .bg-mdn{
-    background-color: white;
-  }
-  .bg-comite {
-    z-index: -2;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/petrol-xs.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #horario{
-    width: 100%;
-    height: auto;
-  }
-  .carrusel{
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .bg-contacto {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bg-xs.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  .bg-footer {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bgblack-xs.jpg) no-repeat center center;
-    background-size: cover;
-  }
-}
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .bg-image{
-    width: 100vw;
-    z-index: -2;
-    height: 100vh;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: #000000 url(../images/bg-sm.jpg) no-repeat center center;
-    background-size: cover;
-    position: fixed;
-  }
-  .roundedbox{
-    width: 95%;
-    height: auto;
-    padding-top: 0;
-  }
-  .bg-mdn{
-    background-color: white;
-  }
-  .bg-comite {
-    z-index: -2;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/petrol-sm.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #horario{
-    width: 100%;
-    height: auto;
-  }
-  .carrusel{
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .card-deck {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .bg-contacto {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bg-sm.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  .bg-footer {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bgblack-sm.jpg) no-repeat center center;
-    background-size: cover;
-  }
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .bg-image{
-    width: 100vw;
-    z-index: -2;
-    height: 100vh;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: #000000 url(../images/bg-md.jpg) no-repeat center center;
-    background-size: cover;
-    position: fixed;
-  }
-  .roundedbox{
-    width: 70%;
-    height: 90px;
-    padding-top: 0.5em;
-  }
-  .bg-mdn{
-    background-color: white;
-  }
-  .bg-comite {
-    z-index: -2;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/petrol.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #horario{
-    width: 90%;
-    height: auto;
-  }
-  .carrusel{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .bg-contacto {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bg-md.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  .bg-footer {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bgblack-md.jpg) no-repeat center center;
-    background-size: cover;
-  }
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .bg-image{
-    width: 100vw;
-    z-index: -2;
-    height: 100vh;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: #000000 url(../images/bg.jpg) no-repeat center center;
-    background-size: cover;
-    position: fixed;
-  }
-  .roundedbox{
-    width: 60%;
-    height: 90px;
-    background-color: #FFFFFF;
-    border-radius: 2em;
-    padding-top: 0.5em;
-  }
-  .bg-mdn{
-    z-index: 9;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/franja1-md.jpg) no-repeat right top;
-    background-size: cover;
-  }
-  .bg-comite {
-    z-index: -2;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/petrol.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #horario{
-    width: 80%;
-    height: auto;
-  }
-  .carrusel{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .card-deck {
-    display: flex !important;
-    flex-direction: row !important;
-  }
-  .bg-contacto {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bg.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  .bg-footer {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bgblack.jpg) no-repeat center center;
-    background-size: cover;
-  }
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .roundedbox{
-    width: 60%;
-    height: 90px;
-    background-color: #FFFFFF;
-    border-radius: 2em;
-    padding-top: 0.5em;
-  }
-  .bg-mdn{
-    z-index: 9;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/franja1.jpg) no-repeat right top;
-    background-size: cover;
-  }
-  .bg-comite {
-    z-index: -2;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/petrol.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  #horario{
-    width: 80%;
-    height: auto;
-  }
-  .carrusel{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .bg-contacto {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bg.jpg) no-repeat center center;
-    background-size: cover;
-  }
-  .bg-footer {
-    z-index: -2;
-    height: auto;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    background: transparent url(../images/bgblack.jpg) no-repeat center center;
-    background-size: cover;
-  }
+@media (min-width:1200px){.roundedbox{width:60%;height:90px;background-color:#FFFFFF;border-radius:2em;padding-top:0.5em;}
+.bg-mdn{z-index:9;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/franja1.jpg) no-repeat right top;background-size:cover;}
+.bg-comite{z-index:-2;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/petrol.jpg) no-repeat center center;background-size:cover;}
+#horario{width:80%;height:auto;}
+.carrusel{width:80%;margin-left:10%;margin-right:10%;padding-left:0px;padding-right:0px;}
+.bg-contacto{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bg.jpg) no-repeat center center;background-size:cover;}
+.bg-footer{z-index:-2;height:auto;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);background:transparent url(../images/bgblack.jpg) no-repeat center center;background-size:cover;}
 }

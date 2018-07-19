@@ -212,7 +212,6 @@
         </div>
       </div>
     </section>
-
     <div class="divider02"></div>
 <!-- PROGRAMACIÓN -->
     <div class="row pt-5 bg-light">
@@ -226,18 +225,6 @@
         <h1 class="text-orange text-center">LOS PONENTES DEL EVENTO</h1>
       </div>
     </div>
-
-<!-- <div class="row bg-light">
-  <div class="col-12">
-    <div class="franja d-flex bd-highlight p-3">
-      <div class="box-rounded mr-auto bd-highlight">
-      </div>
-      <div class="box-rounded bd-highlight">
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <!-- CARRUSEL -->
     <div class="bg-light">
       <div class="carrusel">
@@ -412,14 +399,18 @@
           <div class="col-sm-12">
             <h1 class="text-white">VINCÚLATE AL EVENTO</h1>
           </div>
-          <div class="col-md-6 col-sm-12">
+          <div class="col-sm-12">
             <p class="text-white">Haz parte de SPETC 2018 como patrocinador, donante ó aliado.
               <br>
               Para más información escribenos a: capitulospe_med@unal.edu.co</p>
           </div>
           <div class="col-md-6 col-sm-12">
+            <p class="text-white">Aquí puedes consultar nuestro catálogo de productos.</p>
+            <a  target="_blank" href="CatalogoSPETC2018.pdf"><button type="button" class="btn btn-lg btn-outline-light">Descargar catálogo</button></a>
+          </div>
+          <div class="col-md-6 col-sm-12">
             <p class="text-white">Aquí puedes consultar los productos disponibles.</p>
-            <a  target="_blank" href="Productos.pdf"><button type="button" class="btn btn-lg btn-outline-light">Descargar catálogo</button></a>
+            <a  target="_blank" href="Productos.pdf"><button type="button" class="btn btn-lg btn-outline-light">Ver disponibilidad</button></a>
           </div>
         </div>
       </div>
@@ -449,20 +440,20 @@
               </div>
               <div class="col-12">
 <!-- Formulario -->
-                <form method="post" enctype="multipart/form-data" action="scripts/form-u5922.php">
+                <form method="post" enctype="multipart/form-data" action="correo.php">
                   <div class="form-group">
-                    <label for="widgetu5934_input" class="d-flex justify-content-center"><h4 class="text-orange">Nombre:</h4></label>
-                    <input type="email" class="form-control text-center" id="widgetu5934_input" aria-describedby="emailHelp" placeholder="Tu nombre" required>
+                    <label for="first_name" class="d-flex justify-content-center"><h4 class="text-orange">Nombre:</h4></label>
+                    <input type="first_name" class="form-control text-center" id="first_name" aria-describedby="emailHelp" placeholder="Tu nombre" required>
                   </div>
                   <div class="form-group">
-                    <label for="widgetu5934_input" class="d-flex justify-content-center"><h4 class="text-orange">Correo electrónico:</h4></label>
-                    <input type="email" class="form-control text-center" id="widgetu5934_input" aria-describedby="emailHelp" placeholder="ejemplo@dominio.com" required>
+                    <label for="email" class="d-flex justify-content-center"><h4 class="text-orange">Correo electrónico:</h4></label>
+                    <input type="email" class="form-control text-center" id="email" aria-describedby="emailHelp" placeholder="ejemplo@dominio.com" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1" class="d-flex justify-content-center"><h4 class="text-orange">Mensaje:</h4></label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje" rows="10"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-lg btn-block btn-dark">Enviar</button>
+                  <button type="submit" name="submit" value="Enviar" class="btn btn-lg btn-block btn-dark">Enviar</button>
                 </form>
 <!-- fin del formulario -->
               </div>
